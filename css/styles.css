@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Nunito:wght@200;400;600;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+
+* {
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #145da0, #2e8bc0, #b1d4e0);
+}
+
+header {
+  width: 100vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .info-container {
+  width: 500px;
+  color: #fff;
+  margin: 10px 30px;
+}
+
+header .input-container {
+  margin: 0 30px;
+  padding: 10px;
+  background-color: rgba(126, 200, 227, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+}
+
+.input-container .fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields #title {
+  width: 270px;
+  border: none;
+  border-radius: 10px 0 0 0;
+  padding: 10px 20px;
+  background-color: #b1d4e0;
+  
+}
+
+.fields #description {
+  width: 270px;
+  border: none;
+  border-radius: 0 0 0 10px;
+  padding: 20px;
+  background-color: #2e8bc0;
+}
+
+.input-container input[type="submit"] {
+  width: 70px;
+  border: none;
+  background-color: #145da0;
+  border-radius: 0 10px 10px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.input-container input[type="text"] {
+  color:#fff;
+}
+
+.input-container ::placeholder{
+
+  color: rgba(255, 255, 255, 0.9);
+
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.column-container .task-column {
+  width: 300px;
+  background-color: rgba(126, 200, 227, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.task-list {
+  width: 100%;
+  height: 100%;
+}
+
+.task-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px, rgba(0, 0, 0, 0.2) 0 2px 6px;
+  overflow: hidden;
+}
+
+.task-header {
+  background-color: rgb(104, 154, 184);
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-header p {
+  margin-left: 20px;
+}
+.task-header .delete-icon {
+  color: #145da0;
+}
+
+.task-description-container {
+  padding: 10px;
+  color: rgb(78, 78, 78);
+}
+
+.error-container {
+  height: 30px;
+}
+
+.error-message {
+  text-align: center;
+  margin: 30px;
+  background-color: rgba(206, 7, 7, 0.7);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+}
